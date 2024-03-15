@@ -3,14 +3,13 @@ import { Button } from "../../atom";
 import { InputLabel } from "../../molecule";
 import "./inputLabel.css";
 
-export const form = ({ formProps }) => {
-  const { buttonProps, InputLabelProps } = formProps;
+export const LoginForm = ({ formProps }) => {
+  const { buttonProps, InputLabelProps,onSubmit } = formProps;
   return (
-    <div className="form">
+    < div className="form">
       <InputLabel {...InputLabelProps} />
       <InputLabel {...InputLabelProps} />
-      
       <Button {...buttonProps} />
-    </div>
+      </div>
   );
 };
