@@ -1,6 +1,7 @@
 import "./button.css";
 
-export const Button = ({ id,name,onClick, labelButton, styleType ,type}) => {
+export const Button = (buttonProps) => {
+  const { id,name,onClick, labelButton, styleType ,type}=buttonProps;
   return (
     <button
     {...(type &&{ type})}

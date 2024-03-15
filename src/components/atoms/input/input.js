@@ -1,7 +1,8 @@
+import React from "react";
 import "./input.css";
-export const Input = (props) => {
-    const {required, type, id, name, onChange, placeholder, styleType,labelInput} = props
-    const  className = []
+export const Input = (inputProps) => {
+    const {required, type, id, name, onChange, placeholder, styleType,labelInput} = inputProps
+    
     
    
   return (

@@ -1,12 +1,13 @@
 import "./link.css";
-export const Link = ({ id,name,href, labelLink, styleType ,type}) => {
+export const Link = (linkProps) => {
+  const { id,name,href, labelLink, styleType ,type}=linkProps;
     return (
       <a
       {...(type &&{ type})}
       {...(id && {id})}
       {...(name && {name})}
         href={href}
-        className={`a ${styleType}`}
+        className={styleType}
       >
         {labelLink}
       </a>
